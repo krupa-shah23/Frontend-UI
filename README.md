@@ -37,11 +37,6 @@ A two-player web version of tic-tac-toe. It detects wins and draws and includes 
 Folder: `tictactoe`
 
 
-Login Form UI
-A basic and responsive login page created using HTML and CSS. Good for practicing layout and form styling.  
-Folder: `login-form`
-
-
 News API Project
 A small web app that fetches and displays news using a public API. It uses JavaScript to interact with the API and dynamically update the DOM.  
 Folder: `news api`
