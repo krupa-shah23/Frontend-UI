@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"></head>
+</head>
+<body class="bodybg">
+    <div class="container">
+        <h1 class="heading">Guess the Number</h1>
+        <p class="para">I'm thinking of a number between <span id="1">1</span> and <span id="1">100</span> .</p>
+        <p class="para" id="p">Can you guess it?</p>
+        <div class="input">
+            <input type="number" class="inputnumber" placeholder="Enter your Guess" min="1" max="100"/>
+            <button class="button">Guess</button>
+        </div>
+        <div id="messagewrongright" class="message"></div>
+        <div class="attemptsplusrestart">
+            <div class="attempts">Attempts: <span id="attemptsnumber">0</span></div>
+            <button class="restartbutton">Restart Game</button>
+        </div>
+        <div class="lastdiv">
+            <h2 class="previousguesses">Previous Guesses</h2>
+            <p class="guessvalues"></p>
+        </div>
+    </div>
+
+    <audio class="winsound" src="audio/win.mp3"></audio>
+    <audio class="losesound" src="audio/lose.wav"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>

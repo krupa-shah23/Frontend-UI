@@ -1,0 +1,172 @@
+*{
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+body.bodybg{
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 1rem;
+  background:linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+.container{
+  background-color: white;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width:100%;
+  max-width: 28rem;
+  position:relative;
+  box-shadow:0 10px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+.heading{
+  font-size: 1.875rem;
+  font-weight: 700;
+  color:#4f46e5;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.para{
+  font-size: 1rem;
+  color:#4b5563 ;
+  text-align: center;
+}
+#p{
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+#1{
+  font-weight: bold;
+}
+.input{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.5rem;
+}
+.inputnumber{
+  height:2rem;
+  width:15rem;
+  font-size: 1.125rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-right: none;
+  padding: 0.75rem 1rem;
+  outline: none;
+}
+.inputnumber::-webkit-inner-spin-button,
+.inoutnumber::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.button{
+   height:3.75rem;
+   font-size: 1.125rem;
+   padding: 0.75rem 1rem;
+   outline: none;
+   color:white;
+   background-color: #4f46e5;
+   font-weight: 500;
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #4338ca;
+}
+.message {
+  min-height: 2rem;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.attemptsplusrestart{
+  display: flex;
+  font-size: 1.125rem;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: #374151;
+}
+.restartbutton{
+  color:#4f46e5;
+  background-color:#e0e7ff ;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.125rem;
+  border:none;
+  transition: background-color 0.3s ease;
+}
+.restartbutton:hover {
+  background-color: #c7d2fe;
+}
+.lastdiv{
+   background-color: #eef2ff;
+   border-radius: 0.75rem;
+   padding: 1rem;
+}
+.previousguesses{
+  color: #4f46e5;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+}
+.guessvalues{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.guessvalues span {
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: white;
+  border: 1px solid transparent;
+}
+
+.guessvalues span.low {
+  color: #b45309;
+  border-color: #fcd34d;
+}
+
+.guessvalues span.high {
+  color: #1d4ed8;
+  border-color: #93c5fd;
+}
+
+.guessvalues span.correct {
+  color: #059669;
+  border-color: #6ee7b7;
+  box-shadow: 0 0 8px #6ee7b7;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input.inputnumber, button.button, .restartbutton {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .guessvalues span {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+}
