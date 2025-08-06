@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bella Vista</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home"><i class="fas fa-utensils"></i> Bella Vista</a>
+            <button id="nav-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#reservation" class="nav-link">Reservations</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 mb-4">Welcome to Bella Vista</h1>
+            <p class="lead mb-4">Experience authentic Italian cuisine in an elegant atmosphere.</p>
+            <a href="#reservation" class="btn btn-primary me-2">Make Reservation</a>
+            <a href="#menu" class="btn btn-outline-light">View Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Our Menu</h2>
+            <h3 class="sub-title">Appetizers</h3>
+            <div class="menu-grid">
+                <article class="menu-card">
+                    <div class="menu-image"><i class="fas fa-cheese"></i></div>
+                    <h5>Bruschetta Trio</h5>
+                    <p>Three varieties of bruschetta with tomatoes, basil, and mozzarella.</p>
+                    <div class="price">$12.99</div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-image"><i class="fas fa-fish"></i></div>
+                    <h5>Antipasto Platter</h5>
+                    <p>Cured meats, cheeses, olives, and roasted vegetables.</p>
+                    <div class="price">$18.99</div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-image"><i class="fas fa-seedling"></i></div>
+                    <h5>Caprese Salad</h5>
+                    <p>Mozzarella, tomatoes, and basil with balsamic glaze.</p>
+                    <div class="price">$14.99</div>
+                </article>
+            </div>
+
+            <h3 class="sub-title mt-5">Main Courses</h3>
+            
+            <div class="menu-grid">
+                <article class="menu-card">
+                    <div class="menu-image"><i class="fas fa-pizza-slice"></i></div>
+                    <h5>Margherita Pizza</h5>
+                    <p>San Marzano tomatoes, mozzarella, and basil.</p>
+                    <div class="price">$16.99</div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-image"><i class="fas fa-drumstick-bite"></i></div>
+                    <h5>Osso Buco</h5>
+                    <p>Braised veal shanks with saffron risotto.</p>
+                    <div class="price">$28.99</div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-image"><i class="fas fa-leaf"></i></div>
+                    <h5>Pasta Primavera</h5>
+                    <p>Vegetables with house-made pasta and herb oil.</p>
+                    <div class="price">$19.99</div>
+                </article>
+            </div>
+
+            <h3 class="sub-title mt-5">Desserts</h3>
+            <div class="menu-grid">
+                <article class="menu-card">
+                    <div class="menu-image"><i class="fas fa-birthday-cake"></i></div>
+                    <h5>Tiramisu</h5>
+                    <p>Espresso-soaked ladyfingers and mascarpone.</p>
+                    <div class="price">$8.99</div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-image"><i class="fas fa-ice-cream"></i></div>
+                    <h5>Gelato Trio</h5>
+                    <p>Vanilla, chocolate, and pistachio gelato.</p>
+                    <div class="price">$7.99</div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-image"><i class="fas fa-cookie-bite"></i></div>
+                    <h5>Cannoli</h5>
+                    <p>Ricotta-filled crispy shells with chocolate chips.</p>
+                    <div class="price">$6.99</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-image"><i class="fas fa-utensils"></i></div>
+                <div class="gallery-image"><i class="fas fa-wine-glass"></i></div>
+                <div class="gallery-image"><i class="fas fa-fire"></i></div>
+                <div class="gallery-image"><i class="fas fa-chef-hat"></i></div>
+                <div class="gallery-image"><i class="fas fa-table"></i></div>
+                <div class="gallery-image"><i class="fas fa-candle-holder"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Make a Reservation</h2>
+            <form id="reservationForm" class="reservation-form" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <select id="time" required>
+                            <option value="">Select Time</option>
+                            <option value="17:00">5:00 PM</option>
+                            <option value="17:30">5:30 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="18:30">6:30 PM</option>
+                            <option value="19:00">7:00 PM</option>
+                            <option value="19:30">7:30 PM</option>
+                            <option value="20:00">8:00 PM</option>
+                            <option value="20:30">8:30 PM</option>
+                            <option value="21:00">9:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Guests</label>
+                        <select id="guests" required>
+                            <option value="">Select Guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                            <option value="7">7 Guests</option>
+                            <option value="8">8+ Guests</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-full">
+                        <label for="requests">Special Requests</label>
+                        <textarea id="requests" rows="3" placeholder="Any dietary restrictions or special occasions?"></textarea>
+                    </div>
+                    <div class="form-group form-full text-center">
+                        <button type="submit" class="btn-primary-lg">
+                            <i class="fas fa-calendar-check me-2"></i>Book Table
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact" class="section footer">
+        <div class="container">
+            <div class="footer-grid"><div>
+            <h4><i class="fas fa-utensils"></i> Bella Vista</h4>
+            <p>Experience the finest Italian cuisine in an elegant atmosphere. We look forward to serving you!</p>
+        </div>
+        <div>
+            <h5>Contact Info</h5>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Italian Street, Foodie District</p>
+            <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> info@bellavista.com</p>
+        </div>
+        <div>
+            <h5>Hours</h5>
+            <p><strong>Monday - Thursday:</strong> 5:00 PM - 10:00 PM</p>
+            <p><strong>Friday - Saturday:</strong> 5:00 PM - 11:00 PM</p>
+            <p><strong>Sunday:</strong> 4:00 PM - 9:00 PM</p>
+        </div>
+    </div>
+    <p class="text-center">&copy; 2024 Bella Vista Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disney & Marvel Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div id="startscreen" class="quizcard">
+      <h1 class="heading">Disney & Marvel Quiz</h1>
+      <div>
+        <div class="emoji">✨ 🦸‍♀️ 🏰 🦸‍♂️ ✨</div>
+      </div>
+      <p class="para">
+        Test your knowledge of Disney and Marvel universes! Answer 10 questions and see how many points you can score.
+      </p>
+      <button id="startbtn" class="start">Start Quiz</button>
+    </div>
+
+    <div id="quizscreen" class="quizcard hidden">
+      <div class="header1">
+        <div class="header2">Question <span id="currentquestion">1</span>/10</div>
+        <div class="header2">Score: <span id="score">0</span></div>
+      </div>
+      <div class="progressbar1">
+        <div class="progressbar2 progressfill" style="width: 10%"></div>
+      </div>
+      <h2 id="questiontext" class="questiontext">Question text goes here?</h2>
+      <div id="optionscontainer" class="optioncontainer"></div>
+      <div id="feedback" class="feedback hidden"></div>
+      <button id="nextbtn" class="nextbutton hidden">Next Question</button>
+    </div>
+
+    <div id="resultsscreen" class="quizcard hidden">
+      <div id="resulticon" class="emoji"></div>
+      <h2 class="quizcomplete">Quiz Complete!</h2>
+      <p class="finalscores">
+        Your final score: <span id="finalscore" class="score">0</span> out of 10
+      </p>
+      <div id="resultmessage" class="message"></div>
+      <button id="restartbtn" class="restartbutton">Play Again</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

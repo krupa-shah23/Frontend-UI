@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global News Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🌍 Global News Hub</h1>
+            <div class="language-selector">
+                <label for="language">Language:</label>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="loading" class="loading">Loading news...</div>
+        <div id="error" class="error" style="display: none;">
+            <p>Unable to fetch news at the moment. Please try again later.</p>
+            <p><em>Note: This demo uses sample data as it requires a NewsData.io API key</em></p>
+        </div>
+        <div id="news-container" class="news-grid"></div>
+        
+        <div class="pagination">
+            <button id="prev-btn" onclick="changePage(-1)">← Previous</button>
+            <span id="page-info">Page 1</span>
+            <button id="next-btn" onclick="changePage(1)">Next →</button>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
