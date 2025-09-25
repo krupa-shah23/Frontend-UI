@@ -121,27 +121,29 @@ function renderStudents()
 function getFormData() 
 {
 	return {
-		studentName: fields.studentName.value.trim(),
-		college: fields.college.value.trim(),
+		studentName: fields.studentName.value,
+		college: fields.college.value,
 		cgpa: parseFloat(fields.cgpa.value),
-		phone: fields.phone.value.trim(),
-		sapid: fields.sapid.value.trim(),
-		batch: fields.batch.value.trim(),
-		year: yearMap[fields.year.value] || fields.year.value,
-		address: fields.address.value.trim(),
+		phone: fields.phone.value,
+		sapid: fields.sapid.value,
+		batch: fields.batch.value,
+		year: yearMap[fields.year.value],
+		address: fields.address.value,
 	};
 }
 
 
 function validateData(data) 
 {
-	if (!data.studentName || !data.college || isNaN(data.cgpa) || !data.phone || !data.sapid || !data.batch || !data.year || !data.address) {
+	if (!data.studentName || !data.college || isNaN(data.cgpa) || !data.phone || !data.sapid || !data.batch || !data.year || !data.address) 
+	{
 		alert('Please fill all fields correctly.');
 		return false;
 	}
 
 	for (let s of studentsList) {
-		if (s.sapid === data.sapid && s._id !== editingId) {
+		if (s.sapid === data.sapid && s._id !== editingId) 
+		{
 			alert('SAP ID already exists. Use a unique one.');
 			return false;
 		}
@@ -150,7 +152,8 @@ function validateData(data)
 }
 
 
-async function addStudent() {
+async function addStudent() 
+{
 	const data = getFormData();
 
 	if (!validateData(data)) return;
@@ -162,11 +165,13 @@ async function addStudent() {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify(data)
-			});
+			}
+		);
 
 		const result = await response.json();
 
-		if (!response.ok) {
+		if (!response.ok) 
+		{
 			alert('Error: ' + result.message);
 			return;
 		}
@@ -176,14 +181,15 @@ async function addStudent() {
 		loadStudents();
 	}
 
-	catch (error) 
+	catch(error) 
     {
 		alert('Add error: ' + error.message);
 	}
 }
 
 
-window.startEdit = function (id) {
+startEdit = function (id) 
+{
 	let student = null;
 	for (let i = 0; i < studentsList.length; i++) 
     {
@@ -197,12 +203,12 @@ window.startEdit = function (id) {
 
 	editingId = id;
 
-	fields.studentName.value = student.studentName || '';
-	fields.college.value = student.college || '';
-	fields.cgpa.value = student.cgpa || '';
-	fields.phone.value = student.phone || '';
-	fields.sapid.value = student.sapid || '';
-	fields.batch.value = student.batch || '';
+	fields.studentName.value = student.studentName;
+	fields.college.value = student.college;
+	fields.cgpa.value = student.cgpa;
+	fields.phone.value = student.phone;
+	fields.sapid.value = student.sapid;
+	fields.batch.value = student.batch;
 
 	const reverseYearMap = {
 		"First Year": "1",
