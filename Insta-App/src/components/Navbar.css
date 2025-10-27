@@ -1,0 +1,64 @@
+.navbar-vertical {
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  height: 100vh;
+  width: 350px;
+  background: black;  
+  color: white;
+  display: flex;
+  border-right: 2px solid #232323;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 22px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.navbar-logo {
+  font-family: 'Dancing Script', cursive, 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-left: 24px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+
+.navbar-links-vertical {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;               /* vertical space ke liyee */
+  margin: 0;
+  padding-left: 24px;
+}
+
+.navbar-links-vertical li {
+  font-size: 1.45rem;      
+  display: flex;
+  align-items: center;
+  gap: 16px;               
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.navbar-links-vertical li.active,   
+.navbar-links-vertical li.selected {
+  font-weight: 1000;
+  color: #fff;
+}
+
+.navbar-links-vertical li:hover {
+  color: #d3d3d3;
+}
+
+.message-badge {
+  position: absolute;
+  left: 150px;
+  background: #ff3150;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}

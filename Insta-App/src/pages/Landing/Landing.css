@@ -1,0 +1,130 @@
+.form {
+  background: #181818;
+  border-radius: 15px;
+  box-shadow: 0 2px 30px #0006;
+  width: 350px;
+  max-width: 97vw;
+  margin: 68px auto 16px auto;
+  padding: 35px 30px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginlabel,
+.form-title {
+  font-family: 'Dancing Script', cursive, 'Montserrat', Arial, sans-serif;
+  font-size: 2.1rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  margin-bottom: 18px;
+}
+
+.input,
+.input-valid,
+.input-error {
+  width: 100%;
+  font-size: 1.03rem;
+  background: #222;
+  color: #fff;
+  border-radius: 8px;
+  border: 1.7px solid #333;
+  margin-bottom: 13px;
+  padding: 12px 16px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  outline: none;
+  transition: border 0.11s;
+}
+
+.input-valid {
+  border: 1.7px solid #22c55e;
+}
+
+.input-error {
+  border: 1.7px solid #ef4444;
+}
+
+.loginbutton,
+.signup-button {
+  width: 100%;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  font-family: 'Montserrat', Arial, sans-serif;
+  border-radius: 8px;
+  border: none;
+  padding: 11px 0;
+  font-size: 1.1rem;
+  margin-top: 6px;
+  cursor: pointer;
+  box-shadow: 0 1px 8px #2225;
+  transition: background 0.17s;
+}
+
+.loginbutton:hover,
+.signup-button:hover {
+  background: #1d4ed8;
+}
+
+.error-text {
+  color: #ef4444;
+  font-size: 0.97rem;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+@media (max-width: 540px) {
+  .form {
+    width: 98vw !important;
+    max-width: 99vw !important;
+    min-width: unset;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 25px 0 0 0;
+    padding: 19px 7vw 19px 7vw;
+  }
+
+  .loginlabel,
+  .form-title {
+    font-size: 1.42rem;
+    margin-bottom: 13px;
+    text-align: center;
+  }
+
+  .input,
+  .input-valid,
+  .input-error {
+    font-size: 0.96rem;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .loginbutton,
+  .signup-button {
+    font-size: 0.98rem;
+    padding: 10px 0;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 360px) {
+  .form {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .loginlabel,
+  .form-title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .input,
+  .input-valid,
+  .input-error {
+    font-size: 0.92rem;
+  }
+}

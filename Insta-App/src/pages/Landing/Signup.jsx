@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import "./Landing.css";
+import { useNavigate } from "react-router-dom";
 
-
-const Register = () =>
+const Signup = () =>
 {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -40,12 +41,12 @@ const Register = () =>
 
     if (!validateName(firstName))
     {
-      tempErrors.firstName = "First name must be 2–20 letters only.";
+      tempErrors.firstName = "First name must be 2-20 letters only.";
     }
 
     if (!validateName(lastName))
     {
-      tempErrors.lastName = "Last name must be 2–20 letters only.";
+      tempErrors.lastName = "Last name must be 2-20 letters only.";
     }
 
     if (!validateEmail(email))
@@ -68,6 +69,7 @@ const Register = () =>
     if (Object.keys(tempErrors).length === 0)
     {
       alert("Signup Success!");
+      navigate("/home");
     }
   };
 
@@ -146,4 +148,4 @@ const Register = () =>
 };
 
 
-export default Register;
+export default Signup;

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 101,
+    "user_id": 1,
+    "image": "/images/post1.jpg",
+    "caption": "Vibes only 🌈",
+    "likes": 230,
+    "comments": [
+      { "user": "kiaramehta", "text": "Love this!" },
+      { "user": "rahulv", "text": "🔥🔥🔥" }
+    ]
+  },
+  {
+    "id": 102,
+    "user_id": 2,
+    "image": "/images/post2.jpg",
+    "caption": "Coffee time ☕",
+    "likes": 150,
+    "comments": [
+      { "user": "aarav_23", "text": "Looks great!" }
+    ]
+  }
+]

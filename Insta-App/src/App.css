@@ -1,0 +1,7 @@
+body {
+  background: #111 ;
+}
+.app-main-bg {
+  background: #111;
+  min-height: 100vh;
+}
