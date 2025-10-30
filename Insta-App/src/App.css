@@ -1,7 +1,82 @@
 body {
-  background: #111 ;
+  background: #000;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
-.app-main-bg {
-  background: #111;
+
+.login-signup-container {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+}
+
+.login-signup-tabs {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.ls-tab {
+  color: #fff;
+  background: #181818;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 10px 10px 0 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.ls-tab.active {
+  background: #232323;
+  color: #e1306c;
+  opacity: 1;
+}
+
+.ls-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #232323;
+  padding: 28px 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0, 0.13);
+}
+
+.ls-input {
+  width: 230px;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 6px;
+  border: 2px solid #e1306c;
+  font-size: 1rem;
+  background: #151515;
+  color: #fff;
+  outline: none;
+}
+
+.ls-input:focus {
+  border-color: #fd1d1d;
+}
+
+.ls-btn {
+  background: linear-gradient(90deg, #fd1d1d, #e1306c);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 38px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.18s;
+}
+
+.ls-btn:hover {
+  background: linear-gradient(90deg, #e1306c, #fd1d1d);
 }
