@@ -6,8 +6,8 @@ body {
 
 .profile-bg {
   min-height: 100vh;
-  background: #000;     /* Change from #fafafa to black */
-  color: #fff;          /* Text becomes white for contrast */
+  background: #000;     
+  color: #fff;          
   padding: 40px 0;
   margin-left: 220px; 
   display: flex;
@@ -20,18 +20,18 @@ body {
 .profile-header {
   display: flex;
   align-items: center;
-  justify-content: center;        /* <-- Add this to center horizontally */
+  justify-content: center;      
   gap: 40px;
   padding: 30px 40px;
   border-bottom: 1px solid #ddd;
   width: 100%;
-  text-align: center;             /* Makes the inner text centered */
+  text-align: center;            
 }
 
 .profile-info {
   display: flex;
   flex-direction: column;
-  align-items: center;            /* <-- Add this to center all info below avatar */
+  align-items: center;           
   gap: 6px;
 }
 
@@ -125,7 +125,7 @@ body {
 .post-img {
   width: 100%;
   aspect-ratio: 1/1;
-  height: 340px;        /* Increase from default */
+  height: 340px;      
   object-fit: cover;
   border: 3px solid #e1306c;  
   border-radius: 18px;        

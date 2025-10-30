@@ -1,6 +1,7 @@
 import React from "react";
 
-const InputField = ({ type, name, value, onChange, placeholder, label, error }) => (
+const InputField = ({ type, name, value, onChange, placeholder, label, error }) => 
+  (
   <div className="flex flex-col mb-5">
 
     <label className="text-sm font-medium text-gray-800 mb-2">{label}</label>

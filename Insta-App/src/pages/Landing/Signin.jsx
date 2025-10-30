@@ -9,7 +9,6 @@ function Signin() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // dummy login check
     if (email === "admin@gmail.com" && password === "1234") {
       localStorage.setItem("auth", "true");
       navigate("/home");
