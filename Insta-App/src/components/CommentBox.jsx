@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './CommentBox.css';
 
-function CommentBox() 
-{
+function CommentBox() {
 
 	const [comment, setComment] = useState('');
 
@@ -21,6 +20,7 @@ function CommentBox()
 	return (
 		<div className="comment-box">
 
+			/* Emoji */
 			<button className="emoji-btn">😊</button>
 
 			<input
