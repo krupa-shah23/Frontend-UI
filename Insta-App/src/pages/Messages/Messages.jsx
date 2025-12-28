@@ -24,7 +24,7 @@ function Messages() {
     );
   }
 
-  // SEND MESSAGE
+  
   function sendMessage() {
     if (!message.trim()) return;
 
@@ -47,7 +47,7 @@ function Messages() {
   return (
     <div className="messages-page">
       <div className="chat-container">
-        {/* LEFT CHAT LIST */}
+       
         <div className="chat-list">
           {conversations.map((chat) => (
             <div
@@ -62,7 +62,7 @@ function Messages() {
           ))}
         </div>
 
-        {/* CHAT WINDOW */}
+      
         {activeChat && (
           <div className="chat-window">
             <div className="chat-header">{activeChat.name}</div>

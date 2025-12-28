@@ -78,7 +78,7 @@ const Register = () => {
     	});
 
     	alert("Signup successful! Please login.");
-    	navigate("/"); // ✅ go to login page
+    	navigate("/"); 
   		} 
 		catch (error) 
 		{

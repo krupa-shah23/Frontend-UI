@@ -39,7 +39,7 @@ function Notifications() {
     );
   }
 
-  // NOTIFICATIONS LIST
+ 
   return (
     <div className="notifications-page">
       <h2 className="notifications-title">Notifications</h2>
