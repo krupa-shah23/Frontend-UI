@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Register.css";
 import { useNavigate } from "react-router-dom";
+import { registerUser } from "../../api/auth";
+
 
 const Register = () => {
 	const navigate = useNavigate();
@@ -27,38 +29,64 @@ const Register = () => {
 		return regex.test(pass);
 	};
 
-	const submitSignup = (e) => {
-		e.preventDefault();
+	const submitSignup = async (e) => 
+	{
+  		e.preventDefault();
 
-		let tempErrors = {};
+  		let tempErrors = {};
 
-		if (!validateName(firstName)) {
-			tempErrors.firstName = "First name must be 2-20 letters only.";
-		}
+  		if (!validateName(firstName)) 
+		{
+    		tempErrors.firstName = "First name must be 2-20 letters only.";
+  		}
 
-		if (!validateName(lastName)) {
-			tempErrors.lastName = "Last name must be 2-20 letters only.";
-		}
+  		if (!validateName(lastName)) 
+		{
+    		tempErrors.lastName = "Last name must be 2-20 letters only.";
+  		}
 
-		if (!validateEmail(email)) {
-			tempErrors.email = "Invalid email format.";
-		}
+  		if (!validateEmail(email)) 
+		{
+    		tempErrors.email = "Invalid email format.";
+  		}
 
-		if (!validatePassword(password)) {
-			tempErrors.password =
-				"Password must be 8+ chars, include uppercase, number, and special char.";
-		}
+  		if (!validatePassword(password)) 
+		{
+    		tempErrors.password =
+      		"Password must be 8+ chars, include uppercase, number, and special char.";
+ 		}
 
-		if (password !== confirmPassword) {
-			tempErrors.confirmPassword = "Passwords do not match.";
-		}
+  		if (password !== confirmPassword) 
+		{
+    		tempErrors.confirmPassword = "Passwords do not match.";
+  		}
 
-		setErrors(tempErrors);
+  		setErrors(tempErrors);
 
-		if (Object.keys(tempErrors).length === 0) {
-			navigate("/home");
-		}
+  		if (Object.keys(tempErrors).length !== 0) return;
+
+  		try 
+		{
+    		await registerUser({
+      		name: `${firstName} ${lastName}`,
+      		email,
+      		password,
+      		city: "Unknown",
+      		gender: "other",
+      		dob: "2000-01-01",
+      		bio: "New user",
+    	});
+
+    	alert("Signup successful! Please login.");
+    	navigate("/"); // ✅ go to login page
+  		} 
+		catch (error) 
+		{
+    		console.error(error);
+    		alert("Signup failed. Email may already exist.");
+  		}
 	};
+
 
 	const getInputClass = (value, error) => {
 		if (value === "") {
@@ -125,15 +153,15 @@ const Register = () => {
 
 					<button className="signup-button">Sign Up</button>
 
-					<p style={{ textAlign: "center", marginTop: "10px" }}>
-						Already have an account?{" "}
-						<span
-							style={{ color: "#007bff", cursor: "pointer" }}
-							onClick={() => navigate("/login")}
-						>
-							Login
-						</span>
+					<p className="account-text" style={{ textAlign: "center", marginTop: "10px" }}>
+  						Already have an account?{" "}
+  					
+						<span className="login-link" onClick={() => navigate("/")}>
+    						Login
+  						</span>
 					</p>
+
+
 
 					<p
 						style={{

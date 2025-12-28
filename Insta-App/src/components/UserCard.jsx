@@ -21,14 +21,12 @@ function UserCard({ user })
 	return (
 		<div className="user-card">
 
-			/* User Avatar */
 			<img 
 				src={user.avatar} 
 				alt={user.username} 
 				className="user-avatar"
 			/>
 
-			/* User Info */
 			<div className="user-info">
 				<div className="username">{user.username}</div>
 				<div className="user-bio">{user.bio}</div>

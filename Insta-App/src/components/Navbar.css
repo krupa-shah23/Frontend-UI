@@ -1,51 +1,53 @@
 .navbar-vertical {
-  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   height: 100vh;
-  width: 350px;
-  background: black;  
-  color: white;
+  width: 350px;  
+  background: #000;
+  color: #fff;
   display: flex;
-  border-right: 2px solid #232323;
   flex-direction: column;
-  align-items: flex-start;
-  padding-top: 22px;
+  border-right: 1px solid #222;
+  padding: 25px 20px;
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
 }
 
 .navbar-logo {
-  font-family: 'Dancing Script', cursive, 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 2.2rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
   font-weight: 700;
-  margin-left: 24px;
   margin-bottom: 40px;
-  letter-spacing: 1px;
 }
-
 
 .navbar-links-vertical {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 58px;               /* vertical space ke liyee */
+  gap: 55px;
   margin: 0;
-  padding-left: 24px;
+  padding: 0;
+  font-size: 1.5rem;
 }
 
 .navbar-links-vertical li {
-  font-size: 1.45rem;      
   display: flex;
   align-items: center;
-  gap: 16px;               
+  gap: 12px;
   cursor: pointer;
-  transition: color 0.2s;
+  transition: 0.2s ease;
 }
 
-.navbar-links-vertical li.active,   
-.navbar-links-vertical li.selected {
+.navbar-links-vertical li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.navbar-links-vertical li.active {
   font-weight: 1000;
-  color: #fff;
 }
 
 .navbar-links-vertical li:hover {
@@ -53,12 +55,12 @@
 }
 
 .message-badge {
-  position: absolute;
-  left: 150px;
   background: #ff3150;
   color: #fff;
   border-radius: 50%;
   padding: 2px 7px;
-  font-size: 0.85rem;
-  font-weight: bold;
+  font-size: .85rem;
+  font-weight: 700;
+  position: relative;
+  left: 8px;
 }

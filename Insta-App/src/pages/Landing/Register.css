@@ -1,15 +1,15 @@
 .register-bg {
   min-height: 100vh;
-  background: #fff;
+  background: #181818; 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .form {
-  background: #fff;
+  background: #222; 
   border-radius: 14px;
-  box-shadow: 0 2px 18px rgba(80,80,80,0.07);
+  box-shadow: 0 2px 18px rgba(30,30,30,0.25);
   padding: 34px 30px 26px 30px;
   max-width: 400px;
   width: 99vw;
@@ -22,7 +22,7 @@
   font-size: 1.35rem;
   font-weight: 700;
   margin-bottom: 12px;
-  color: #212121;
+  color: #fafafa; 
   text-align: center;
 }
 
@@ -31,18 +31,22 @@
   margin-bottom: 13px;
   padding: 13px 15px;
   border-radius: 7px;
-  border: 1.2px solid #ddd;
-  background: #fafafa;
+  border: 1.2px solid #444;
+  background: #191919; 
+  color: #fafafa;
   font-size: 1rem;
   outline: none;
 }
+
 .input-error {
   border-color: #c02739;
-  background: #fff4f4;
+  background: #2a151a; 
 }
+
 .input-valid {
   border-color: #6f19ff;
 }
+
 .error-text {
   color: #c02739;
   font-size: 0.93rem;
@@ -50,6 +54,7 @@
   width: 100%;
   text-align: left;
 }
+
 .signup-button {
   width: 100%;
   background: linear-gradient(90deg,#6f19ff 65%, #bd41e1 100%);
@@ -64,9 +69,23 @@
   box-shadow: 0 2px 12px #6f19ff18;
   transition: background 0.17s;
 }
+
 .signup-button:hover {
   background: #4a1fa3;
 }
+
+.account-text {
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-link {
+  color: #007bff;
+  cursor: pointer;
+}
+
+
 @media (max-width: 600px) {
   .form { padding: 17px 8px 14px 8px; }
 }

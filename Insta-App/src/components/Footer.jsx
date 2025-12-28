@@ -16,7 +16,7 @@ function Footer()
                 </div>
 
                 <div className="footer-copyright">
-                    <p>© 2025 InstaGram. All rights reserved.</p>
+                    <p>© 2025 Connect. All rights reserved.</p>
                 </div>
                 
             </div>
