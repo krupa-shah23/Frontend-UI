@@ -1,7 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import ProtectedRoute from "./components/ProtectedRoute";
-import Landing from "./pages/Landing/Landing";
 import Auth from "./pages/Auth/Auth";
 import Home from "./pages/Home/Home";
 import Discover from "./pages/Discover/Discover";
