@@ -27,7 +27,7 @@
 
 .feed 
 {
-  width: 430px;
+  width: min(540px, 100%);
   padding: 32px 0 48px;
   display: flex;
   flex-direction: column;

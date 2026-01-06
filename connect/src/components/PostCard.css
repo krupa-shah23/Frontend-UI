@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 14px 14px 12px;
+  padding: 16px 14px 12px;
 }
 
 
@@ -43,7 +43,7 @@
 .username 
 {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15.5px;
   color: var(--text-primary);
 }
 
@@ -62,7 +62,7 @@
   display: flex;
   gap: 18px;
   padding: 12px 14px;
-  font-size: 22px;
+  font-size: 23px;
   cursor: pointer;
 }
 
@@ -83,7 +83,7 @@
 .post-likes 
 {
   padding: 0 14px;
-  font-size: 14px;
+  font-size: 14.5px;
   font-weight: 600;
   color: var(--accent);
 }
@@ -92,7 +92,7 @@
 .post-caption 
 {
   padding: 6px 14px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 
@@ -103,7 +103,7 @@
 
 .comments-title 
 {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text-muted);
   padding: 6px 14px 2px;
   text-transform: uppercase;
@@ -113,7 +113,7 @@
 .comment 
 {
   padding: 2px 14px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .add-comment 
@@ -126,6 +126,7 @@
 
 .add-comment input 
 {
+  font-size: 14.5;
   flex: 1;
   background: none;
   border: none;
