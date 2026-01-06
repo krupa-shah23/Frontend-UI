@@ -1,0 +1,53 @@
+.post-card {
+  background: #191919;
+  color: #fff;
+  border-radius: 14px;
+  margin-bottom: 24px;
+  padding: 14px;
+  max-width: 410px;
+  box-shadow: 0 1.5px 8px rgba(0,0,0,0.07);
+}
+
+.post-card-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.post-card-img {
+  width: 100%;
+  max-height: 430px;           
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 0;
+  display: block;
+}
+
+
+.post-card span {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.post-card-actions {
+  margin-bottom: 8px;
+}
+
+.post-card-actions span {
+  margin-right: 15px;
+  font-size: 1.1rem;
+}
+
+.post-card-caption {
+  font-size: 0.98rem;
+  margin-bottom: 7px;
+}
+
+.post-card .view-comments {
+  color: #2e81f4;
+  cursor: pointer;
+  font-size: 0.95rem;
+  margin-top: 5px;
+  display: inline-block;
+}

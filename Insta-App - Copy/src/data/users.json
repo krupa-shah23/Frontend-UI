@@ -1,0 +1,16 @@
+[
+{
+"id": 1,
+"name": "Aarav Singh",
+"username": "aarav_23", 
+"avatar": "/images/user1.jpg",
+"bio": "Frontend dev who never sleeps." 
+},
+{
+"id": 2,
+"name": "Kiara Mehta",
+"username": "kiaramehta", 
+"avatar": "/images/user2.jpg", 
+"bio": "Coffee + CSS = best combo." 
+}
+]

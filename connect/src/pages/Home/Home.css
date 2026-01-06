@@ -1,0 +1,35 @@
+.home 
+{
+  min-height: 100vh;
+  padding-left: 240px; 
+  background: 
+  radial-gradient
+  (
+    circle at 30% 10%,
+    rgba(34, 197, 94, 0.08),
+    transparent 40%
+  ),
+  
+  radial-gradient
+  (
+    circle at 70% 40%,
+    rgba(34, 197, 94, 0.05),
+    transparent 45%
+  ),
+  
+  var(--bg-main);
+
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.feed 
+{
+  width: 430px;
+  padding: 32px 0 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}

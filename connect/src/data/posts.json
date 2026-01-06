@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "user": {
+      "username": "kiara_mehta",
+      "avatar": "/images/user1.jpg"
+    },
+    "image": "/images/post1.jpg",
+    "caption": "Late night coding ✨",
+    "likes": 312,
+    "comments": [
+      { "user": "aarav.dev", "text": "So cute 😍" },
+      { "user": "mehul.codes", "text": "Love this!" }
+    ]
+  },
+  {
+    "id": 2,
+    "user": {
+      "username": "aarav.dev",
+      "avatar": "/images/user2.jpg"
+    },
+    "image": "/images/post2.jpg",
+    "caption": "Dark UI hits different ",
+    "likes": 198,
+    "comments": [
+      { "user": "kiara_mehta", "text": "Facts " }
+    ]
+  }
+]

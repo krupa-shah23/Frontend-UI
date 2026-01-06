@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "username": "aarav.dev",
+    "name": "Aarav",
+    "avatar": "/images/user1.jpg",
+    "bio": "Frontend dev 🚀"
+  },
+  {
+    "id": 2,
+    "username": "kiara_mehta",
+    "name": "Kiara",
+    "avatar": "/images/user2.jpg",
+    "bio": "Design + coffee ☕"
+  },
+  {
+    "id": 3,
+    "username": "mehul.codes",
+    "name": "Mehul",
+    "avatar": "/images/user3.jpg",
+    "bio": "React & chill"
+  }
+]

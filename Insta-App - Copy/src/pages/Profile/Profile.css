@@ -1,0 +1,259 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #000;
+}
+
+
+.profile-bg {
+  min-height: 100vh;
+  background: #000;     
+  color: #fff;          
+  padding: 40px 0;
+  margin-left: 350px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;      
+  gap: 40px;
+  padding: 30px 40px;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  text-align: center;            
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;           
+  gap: 6px;
+}
+
+
+
+.profile-avatar {
+  border-radius: 50%;
+  border: 2px solid #e1306c;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.profile-info > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.profile-name {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.profile-username {
+  color: #888;
+  font-size: 15px;
+}
+
+.profile-bio {
+  font-size: 20px;
+  max-width: 420px;
+}
+
+.profile-stats {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.profile-stat-item b {
+  font-size: 16px;
+}
+
+
+.profile-edit-btn {
+  margin-top: 10px;
+  background: #e1306c;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.profile-edit-btn:hover {
+  background: #c13584;
+}
+
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.post-thumb {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+ background: #fff;
+  border: 2.5px solid #ccc;         
+  padding: 12px;
+  border-radius: 18px;
+  border: 2.5px solid #ccc;        
+  padding: 12px;
+  background: #fff;
+  transition: box-shadow 0.16s;
+}
+.post-thumb:hover {
+  box-shadow: 0 4px 28px #e1306c12;
+  border-color: #e1306c;
+}
+
+
+.post-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  height: 340px;      
+  object-fit: cover;
+  border: 3px solid #e1306c;  
+  border-radius: 18px;        
+  box-shadow: 0 2px 14px rgba(0,0,0,0.07);
+}
+
+
+.post-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: opacity 0.2s ease-in-out;
+}
+.post-thumb:hover .post-overlay {
+  opacity: 1;
+}
+
+
+.post-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.post-modal-content {
+  background: black;
+  border-radius: 12px;
+  padding: 18px;
+  max-width: 380px;
+  width: 90%;
+  position: relative;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.post-modal-close {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  font-size: 20px;
+  color: #444;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.post-modal-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.post-modal-likes {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #e1306c;
+}
+
+.post-modal-caption {
+  margin-top: 6px;
+}
+
+.post-modal-comments {
+  margin-top: 12px;
+}
+
+.post-modal-comments ul {
+  margin-top: 6px;
+  padding-left: 15px;
+}
+.post-modal-comments li {
+  margin-bottom: 5px;
+}
+
+.profile-header,
+.profile-center-container,
+.profile-info,
+.post-thumb {
+  background: #fff;
+
+  color: #333;
+}
+
+.profile-info .profile-name,
+.profile-info .profile-stat {
+  color: black;
+}
+
+.empty-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #222;
+}
+
+.muted {
+  color: #888;
+}
+
+.profile-empty-posts {
+  margin-top: 80px;
+  text-align: center;
+  color: #888;
+}
+
+.empty-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  margin: 0 auto 20px;
+}

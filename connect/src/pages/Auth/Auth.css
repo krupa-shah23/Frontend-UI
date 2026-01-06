@@ -1,0 +1,256 @@
+.auth-page 
+{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-main);
+}
+
+
+.auth-container 
+{
+  position: relative;
+  width: 900px;
+  max-width: 95%;
+  height: 520px;
+  background: linear-gradient(180deg, #0b1220, #090f1c);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(20, 184, 166, 0.35); 
+}
+
+
+.form-container 
+{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transition: all 0.6s ease-in-out;
+}
+
+
+.form-container form 
+{
+  height: 100%;
+  background: #0b1220;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 48px;
+  gap: 12px;
+}
+
+
+.form-container h1 
+{
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+
+.form-container input 
+{
+  background: #111a2e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 14px;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+
+.form-container input::placeholder 
+{
+  color: rgba(255, 255, 255, 0.45);
+}
+
+
+.form-container button 
+{
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 999px;
+  background: #14b8a6; 
+  color: #042f2e;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.form-container button:hover 
+{
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(20, 184, 166, 0.35);
+}
+
+
+.sign-in 
+{
+  left: 0;
+  z-index: 2;
+}
+
+
+.sign-up 
+{
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+
+.overlay-container 
+{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+
+.overlay 
+{
+  position: relative;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #0f766e,   
+    #14b8a6    
+  );
+  color: #ecfdf5;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+
+.overlay-panel 
+{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+  align-items: center;       
+  padding: 0 48px;
+  text-align: center;
+}
+
+
+.overlay-panel h1 
+{
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+
+.overlay-panel p 
+{
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+
+.overlay-left 
+{
+  left: 0;
+}
+
+
+.overlay-right 
+{
+  right: 0;
+}
+
+
+button.ghost 
+{
+  background: transparent;
+  border: 1px solid rgba(236, 253, 245, 0.85);
+  color: #ecfdf5;
+  padding: 10px 32px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+
+button.ghost:hover 
+{
+  background: rgba(236, 253, 245, 0.12);
+}
+
+
+.auth-container.right-panel-active .sign-in 
+{
+  transform: translateX(100%);
+}
+
+
+.auth-container.right-panel-active .sign-up 
+{
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+}
+
+
+.auth-container.right-panel-active .overlay-container 
+{
+  transform: translateX(-100%);
+}
+
+
+.auth-container.right-panel-active .overlay 
+{
+  transform: translateX(50%);
+}
+
+
+.password-field 
+{
+  position: relative;
+}
+
+
+.password-field input 
+{
+  width: 100%;
+  padding-right: 42px; 
+}
+
+
+.password-field span 
+{
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0.65;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #14b8a6;
+}
+
+
+.password-field span:hover 
+{
+  opacity: 1;
+}

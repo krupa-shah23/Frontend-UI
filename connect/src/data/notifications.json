@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "type": "follow",
+    "user": "kiara_mehta",
+    "message": "You started following kiara_mehta",
+    "time": "2m",
+    "unread": true
+  },
+  {
+    "id": 2,
+    "type": "like",
+    "user": "aarav.dev",
+    "message": "aarav.dev liked your post",
+    "time": "10m",
+    "unread": true
+  },
+  {
+    "id": 3,
+    "type": "comment",
+    "user": "mehul.codes",
+    "message": "mehul.codes commented on your post",
+    "time": "1h",
+    "unread": false
+  }
+]
